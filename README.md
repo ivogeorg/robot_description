@@ -13,6 +13,7 @@ A URDF model of a simple robot for Gazebo.
    2. Support twice as big as contact.
    3. Borrow inertia from other elements.
    4. Fixed joint with chassis.
+3. Check if the `Expand Joint Details: false` setting in `config.rviz` is suppressing the showing of the joint.
 
 ### References
 
