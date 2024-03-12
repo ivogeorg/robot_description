@@ -13,3 +13,8 @@ A URDF model of a simple robot for Gazebo.
    2. Support twice as big as contact.
    3. Borrow inertia from other elements.
    4. Fixed joint with chassis.
+
+### References
+
+1. [Moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia).
+2. [Robotnik RB-1](https://robotnik.eu/products/mobile-robots/rb-1-base-en/).
