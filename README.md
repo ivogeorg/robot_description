@@ -13,3 +13,7 @@ A URDF model of a simple robot for Gazebo.
 
 1. [Moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia).
 2. [Robotnik RB-1](https://robotnik.eu/products/mobile-robots/rb-1-base-en/).
+3. [Gazebo ROS-URDF](http://gazebosim.org/tutorials?tut=ros_urdf).
+4. [ROS link](http://wiki.ros.org/urdf/XML/link).
+5. [ROS joint](http://wiki.ros.org/urdf/XML/joint).
+
