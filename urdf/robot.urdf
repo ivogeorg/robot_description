@@ -2,6 +2,29 @@
 
 <robot name="robot">
 
+    <!-- Gazebo simulator -->
+    <gazebo reference="link_chassis">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="link_caster_wheel">
+        <material>Gazebo/Grey</material>
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+    <gazebo reference="link_left_wheel">
+        <material>Gazebo/Black</material>
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+    </gazebo>
+    <gazebo reference="link_right_wheel">
+        <material>Gazebo/Black</material>
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+    </gazebo>
+    <gazebo reference="joint_chassis_caster_wheel">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
     <!-- Link - chassis -->
     <link name="link_chassis">
         <inertial>
@@ -177,8 +200,7 @@
     </joint>
 
     <!-- Link - caster wheel -->
-    <!-- TODO -->
-    <link name="caster_wheel">
+    <link name="link_caster_wheel">
         <inertial> <!-- Is this correct? -->
             <mass value="1" />
             <origin xyz="0 0 0.3" rpy="0 0 0" />
@@ -194,7 +216,7 @@
         </collision>
 
         <visual>
-            <origin rpy="0 0 0" xyz="0 0 0" /> <!-- TODO -->
+            <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <sphere radius="0.25" />
             </geometry>
@@ -205,7 +227,7 @@
 
         <!-- Inner wheel-->
         <collision>
-            <origin rpy="0 0 0" xyz="0 0 0" /> <!-- TODO -->
+            <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <sphere radius="0.125" />
             </geometry>
@@ -223,9 +245,9 @@
     </link>
 
     <!-- Joint - chassis / caster wheel -->
-    <joint name="caster_wheel" type="fixed">
+    <joint name="joint_chassis_caster_wheel" type="fixed">
         <origin rpy="0 0 0" xyz="0.75 0 -0.125" />
-        <child link="caster_wheel" />
+        <child link="link_caster_wheel" />
         <parent link="link_chassis" />
         <joint_properties damping="1.0" friction="1.0" />
     </joint>
