@@ -24,7 +24,21 @@
     <gazebo reference="joint_chassis_caster_wheel">
         <preserveFixedJoint>true</preserveFixedJoint>
     </gazebo>
-
+    <gazebo>
+        <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
+            <alwaysOn>true</alwaysOn>
+            <updateRate>20</updateRate>
+            <leftJoint>joint_chassis_left_wheel</leftJoint>
+            <rightJoint>joint_chassis_right_wheel</rightJoint>
+            <wheelSeparation>1.66</wheelSeparation> <!-- TODO: update for mesh tires -->
+            <wheelDiameter>0.8</wheelDiameter> <!-- TODO: check if this is true -->
+            <torque>10</torque>
+            <commandTopic>cmd_vel</commandTopic>
+            <odometryTopic>odom</odometryTopic>
+            <odometryFrame>odom</odometryFrame>
+            <robotBaseFrame>link_chassis</robotBaseFrame>
+        </plugin>
+    </gazebo>
     <!-- Link - chassis -->
     <link name="link_chassis">
         <inertial>
