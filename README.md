@@ -22,4 +22,7 @@ A URDF model of a simple robot for Gazebo.
 9. [Gazebo ROS packages and plugins](http://wiki.ros.org/gazebo_ros_pkgs).
 10. [Gazebo ROS packages and plugins (Github)](https://github.com/ros-simulation/gazebo_ros_pkgs).
 11. [ROS XACRO](http://wiki.ros.org/xacro).
+12. [ROS rqt_publisher](https://wiki.ros.org/rqt_publisher).
+13. [ROS rqt_reconfigure](https://wiki.ros.org/rqt_reconfigure).
+
 
