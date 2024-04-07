@@ -1,6 +1,8 @@
 ### robot_description
 
-A URDF model of a simple robot for Gazebo.
+![Screenshot of robot spawned in Gazebo](assets/robot-with-laser-scan-and-tail.png)
+
+A URDF/XACRO model of a simple robot for Gazebo. Differential driver. Laser scan. Tail. Publishing messages. Dynamic reconfiguration.
 
 ### TODO
 
