@@ -19,4 +19,7 @@ A URDF model of a simple robot for Gazebo.
 6. [ROS-URDF Materials](https://classic.gazebosim.org/tutorials?tut=ros_urdf#Materials:Usingpropercolorsandtextures). _Note that the [source](https://github.com/gazebosim/gazebo-classic/blob/master/media/materials/scripts/gazebo.material) is all scripts which parameterize sets of internal Gazebo simulation capabilities._
 7. [Gazebo physics friction](http://gazebosim.org/tutorials?tut=friction).
 8. [Engineering Toolbox friction](https://www.engineeringtoolbox.com/friction-coefficients-d_778.html).
+9. [Gazebo ROS packages and plugins](http://wiki.ros.org/gazebo_ros_pkgs).
+10. [Gazebo ROS packages and plugins (Github)](https://github.com/ros-simulation/gazebo_ros_pkgs).
+11. [ROS XACRO](http://wiki.ros.org/xacro).
 
